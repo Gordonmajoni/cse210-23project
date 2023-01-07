@@ -9,6 +9,7 @@ class Program
         string Surname ="Majoni";
         Console.WriteLine($"What is your name?{Name}");
         Console.WriteLine($"What is your lastname?{Surname}");
-        Console.WriteLine($"Your name is ,{Name} {Surname}");
+        Console.WriteLine($"Your name is {Surname},{Name} {Surname}");
+
     }
 }
