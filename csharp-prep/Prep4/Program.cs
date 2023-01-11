@@ -11,7 +11,7 @@ class Program
         int inputNumber= -1;
         while(inputNumber != 0)
     {
-        Console.Write("Enter a number(0 to quit)");
+        Console.Write("Enter a number(0 to quit):");
 
         string userResponse = Console.ReadLine();
         inputNumber = int.Parse(userResponse);
@@ -19,6 +19,7 @@ class Program
         if (inputNumber != 0)
         {
             numbers.Add(inputNumber);
+            Console.Write(inputNumber);
         }
         //sum the list
         int sum = 0;
