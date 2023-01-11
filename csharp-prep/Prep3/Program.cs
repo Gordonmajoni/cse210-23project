@@ -9,8 +9,8 @@ class Program
         Console.Write("What is the magic number? "); 
         int magicNumber = int.Parse (Console.ReadLine());
 //user guess the number.
-        Console.Write("What is your guess? ");
-        int guessNumber = int.Parse (Console.ReadLine());
+        //Console.Write("What is your guess? ");
+        //int guessNumber = int.Parse (Console.ReadLine());
 //random number generator.
         Random randomGenerator = new Random();
         int Number = randomGenerator.Next(1, 11);
