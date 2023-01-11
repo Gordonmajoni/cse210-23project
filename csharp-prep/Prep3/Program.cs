@@ -22,6 +22,19 @@ class Program
             Console.Write("What is your guess? ");
             guess = int.Parse(Console.ReadLine());
 
+            if (magicNumber > guess)
+            {
+                Console.WriteLine("Higheer");
+            }
+            else if (magicNumber < guess)
+            {
+                Console.WriteLine("Lower");
+            }
+            else
+            {
+                Console.WriteLine("You guessed it!");
+            }
+
         }
 
 
