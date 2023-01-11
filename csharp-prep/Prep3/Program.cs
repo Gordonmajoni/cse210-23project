@@ -16,7 +16,5 @@ class Program
         int Number = randomGenerator.Next(1, 11);
 
 
-
-
     }
 }
