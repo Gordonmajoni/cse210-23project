@@ -3,14 +3,51 @@ using System;
 class Program
 {
     static void Main(string[] args)
-    {   static void DisplayWelcome()
-        {
-            Console.WriteLine($"Welcome to the programe!{DisplayWelcome}");
+    {   
+        {DisplayWelcomeMessage();
+
+        string UserName = PromptUserName();
+        int UserNumber =  PromptUserNumber();
+        
+        int SquredNumber = SquaredNumber(UserNumber);
+
+        DisplayResult(UserName, SquaredNumber);
+
+
         }
-        static void PromptUserName()
+        static void DisplayWelcomeMessage()
         {
-            Console.Write("Please enter your name? ");
-            Console.WriteLine($"Your name is:{PromptUserName}");
+            Console.WriteLine("Welcome to the program!");
+             
         }
-}
+        static string PromptUserName()
+        {
+            Console.WriteLine("What is your name?: ");
+            string Name = Console.ReadLine();
+
+            return Name;
+        }
+        static int PromptUserNumber()
+
+        {
+            Console.Write("Your Favourite number is: ");        
+            int number = int.Parse(Console.ReadLine());
+
+            return number;
+
+
+        }
+        static int SquaredNumber(int number)
+
+        {
+            int square = number * number;
+            return square;
+        }
+        static void DisplayResult(string Name, int square)
+        {
+            Console.WriteLine($"{Name}, the square of your number is{square} ")
+        }
+
+
+    }
 }
