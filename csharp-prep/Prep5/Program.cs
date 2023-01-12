@@ -22,7 +22,7 @@ class Program
         }
         static string PromptUserName()
         {
-            Console.WriteLine("What is your name?: ");
+            Console.Write("What is your name?: ");
             string Name = Console.ReadLine();
 
             return Name;
