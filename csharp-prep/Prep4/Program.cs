@@ -19,7 +19,7 @@ class Program
         if (inputNumber != 0)
         {
             numbers.Add(inputNumber);
-            Console.Write(inputNumber);
+            
         }
         //sum the list
         int sum = 0;
