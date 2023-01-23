@@ -4,8 +4,8 @@ using System;
 public class journal
 {
     public string _prompt;
-
-    public int _date;
+    public string _addEntry;
+    public string _save;
     public void 
     Display()
     {
