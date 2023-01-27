@@ -2,6 +2,8 @@ using System.IO;
 
 class Program
 {
+    public static List<string> RandomAccess { get; private set; }
+
     static void Main(string[] args)
     {
         //creating a list of prompts
@@ -12,6 +14,8 @@ class Program
         prompts.Add("What will you change if given a chance to relive this moment?");
         prompts.Add("Who did you meet?");
         foreach(string a in prompts)
-        Console.WriteLine(a);
+
+        RandomAccess = new List<string>(prompts);
+        Console.WriteLine(prompts);
     }
 }
